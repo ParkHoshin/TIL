@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+
+	<bean id="hawaiiService" class="service.HawaiiServiceImpl">
+		<property name="hawaiiDao" ref="hawaiiDao" />
+		<property name="actDao" ref="actDao" />
+		<property name="foodDao" ref="foodDao" />
+		<property name="infoDao" ref="infoDao" />
+		<property name="tourDao" ref="tourDao" />
+
+	</bean>
+
+
+
+</beans>

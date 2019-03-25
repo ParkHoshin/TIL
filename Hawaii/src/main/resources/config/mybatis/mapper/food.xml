@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="food"> 
+
+	<!-- 목록조회 -->
+	<select id="food_list" resultType="vo.FoodVo">
+		select * from hw_island order by hw_idx
+	</select>
+	<!-- Food 한개 조회 -->
+	<select id="food_one" parameterType="String" resultType="vo.FoodVo">
+		select * from h_food where hf_idx=#{ hf_idx }
+	</select>
+	
+	
+
+	
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
